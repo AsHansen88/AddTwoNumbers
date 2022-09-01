@@ -18,9 +18,10 @@ public class Homecontroller {
 
   @PostMapping("/calculate")
 
-  public String Calculate(@ModelAttribute DTO data, Model model){
 
-    String value_1= data.getValue_1();
+  public String calculate(@ModelAttribute DTO data, Model model){
+
+    String value_1=data.getValue_1();
     String value_2=data.getValue_2();
     double result=Double.parseDouble(value_1)+Double.parseDouble(value_2);
 
